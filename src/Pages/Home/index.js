@@ -41,7 +41,6 @@ export default function Home({ navigation }) {
   const [cases, setCases] = useState(0);
 
   useEffect(() => {
-    console.log("REQUEST");
     if (cases && deaths) return;
     const url = "https://covid-19-data.p.rapidapi.com/country/code";
     const params = {
@@ -148,7 +147,7 @@ export default function Home({ navigation }) {
           </View>
           <View style={{ marginTop: 30, marginBottom: 15 }}>
             <Text style={{ fontWeight: "bold" }}>
-              *Valores references apenas ao Brasil
+              *Valores referentes apenas ao Brasil
             </Text>
           </View>
         </View>
